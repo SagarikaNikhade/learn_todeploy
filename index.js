@@ -7,9 +7,9 @@ const {auth} = require("./middleware/auth.middleware")
 const {notesRouter} = require("./routes/Notes.route")
 const cors = require("cors");
 require('dotenv').config()
-app.use(cors())
-app.use(express.json())
 
+app.use(express.json())
+app.use(cors())
 
 app.use("/user",UserRouter)
 
